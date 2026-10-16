@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #0B1110;
+    --bg-secondary: #111A17;
+    --bg-card: #17241D;
+    --accent-primary: #B7FF4A;
+    --accent-secondary: #FFAD5A;
+    --text-main: #F4F7F4;
+    --text-muted: #9DAFA6;
+    --border-color: #29372F;
+    --color-success: #43D98B;
+    --color-error: #FF6B6B;
+  }
+
+  /* Light mode overrides if user selects light theme */
+  html.light {
+    --bg-primary: #F4F7F5;
+    --bg-secondary: #E8EFEA;
+    --bg-card: #FFFFFF;
+    --accent-primary: #1F7A3F;
+    --accent-secondary: #D97706;
+    --text-main: #111A17;
+    --text-muted: #52665C;
+    --border-color: #D3DFD8;
+    --color-success: #16A34A;
+    --color-error: #DC2626;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-main);
+    font-family: 'Plus Jakarta Sans', 'Noto Sans Arabic', system-ui, -apple-system, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* Urdu typography enhancements when dir is rtl */
+  [dir="rtl"] {
+    font-family: 'Noto Sans Arabic', 'Plus Jakarta Sans', system-ui, sans-serif;
+    line-height: 1.6;
+  }
+}
+
+/* Custom mobile utilities */
+.pb-safe {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+.pt-safe {
+  padding-top: max(0.75rem, env(safe-area-inset-top));
+}
+
+/* Tabular numbers for timers and rep counts */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Smooth transitions */
+.transition-surface {
+  transition-property: background-color, border-color, color, fill, stroke, box-shadow, transform, opacity;
+  transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+  transition-duration: 200ms;
+}
+
+/* Subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #29372F;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3B4F43;
+}

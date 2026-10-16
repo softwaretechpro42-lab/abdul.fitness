@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#111A17" />
+      <stop offset="100%" stop-color="#0B1110" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B7FF4A" />
+      <stop offset="100%" stop-color="#43D98B" />
+    </linearGradient>
+    <linearGradient id="orange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFAD5A" />
+      <stop offset="100%" stop-color="#FF6B6B" />
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="104" fill="url(#bg)" stroke="#29372F" stroke-width="8" />
+  <!-- Dynamic Fitness Bolt & Dumbbell Ring -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="#29372F" stroke-width="16" stroke-dasharray="14 10" />
+  <circle cx="256" cy="256" r="180" fill="none" stroke="url(#accent)" stroke-width="16" stroke-dasharray="800" stroke-dashoffset="240" stroke-linecap="round" />
+  <!-- Central Lightning/Energy Figure -->
+  <path d="M 276 96 L 180 266 L 244 266 L 224 416 L 332 236 L 268 236 Z" fill="url(#accent)" filter="drop-shadow(0 6px 12px rgba(183, 255, 74, 0.4))" />
+  <circle cx="340" cy="170" r="18" fill="url(#orange)" />
+  <circle cx="172" cy="342" r="14" fill="#B7FF4A" />
+</svg>

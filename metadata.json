@@ -1,0 +1,6 @@
+{
+  "name": "My Fitness Tracker",
+  "description": "Premium, mobile-first personal workout tracking Progressive Web App with 26-week progression, Urdu and English support, offline-first local storage, and 18 exercises. Made by Abdul Rehman Ktk.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
